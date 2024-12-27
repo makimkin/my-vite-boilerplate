@@ -1,0 +1,55 @@
+components:
+- all:
+  - changed-files:
+    - any-glob-to-any-file: 'src/components/**'
+    - all-globs-to-all-files: '!src/components/ui/**'
+
+ui:
+- changed-files:
+  - any-glob-to-any-file: 'src/components/ui/**'
+
+api:
+- changed-files:
+  - any-glob-to-any-file: 'src/api/**'
+
+hooks:
+- changed-files:
+  - any-glob-to-any-file: 'src/hooks/**'
+
+layouts:
+- changed-files:
+  - any-glob-to-any-file: 'src/layouts/**'
+
+pages:
+- changed-files:
+  - any-glob-to-any-file: 'src/pages/**'
+  - any-glob-to-any-file: 'src/routes/**'
+
+providers:
+- changed-files:
+  - any-glob-to-any-file: 'src/providers/**'
+
+store:
+- changed-files:
+  - any-glob-to-any-file: 'src/store/**'
+
+styles:
+- changed-files:
+  - any-glob-to-any-file: 'src/styles/**'
+  - any-glob-to-any-file: 'src/index.scss'
+  - any-glob-to-any-file: 'tailwind.config.ts'
+  - any-glob-to-any-file: 'src/types/icons.types.ts'
+
+tests:
+- changed-files:
+  - any-glob-to-any-file: 'src/tests/**'
+
+lib:
+- changed-files:
+  - any-glob-to-any-file: 'src/lib/**'
+
+types:
+- all:
+  - changed-files:
+    - any-glob-to-any-file: 'src/types/**'
+    - all-globs-to-all-files: '!src/types/icons.types.ts'

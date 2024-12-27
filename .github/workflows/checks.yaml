@@ -1,0 +1,37 @@
+name: checks
+
+on: [push]
+
+jobs:
+  test_lint_build:
+    # to deactivate the action put "false"
+    if: ${{ true }}
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [22]
+
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: pnpm i
+
+      - name: Run tests
+        run: pnpm test
+
+      - name: Run lint
+        run: pnpm lint
+
+      - name: Run build
+        run: pnpm build
