@@ -1,5 +1,5 @@
 {
-  "name": "my-vite-vitare",
+  "name": "my-vite-{{cookiecutter.app_name}}",
   "private": true,
   "version": "0.0.0",
   "type": "module",

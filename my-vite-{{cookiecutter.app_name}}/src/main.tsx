@@ -13,7 +13,9 @@ const prod = process.env.NODE_ENV === "production";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <title>{prod ? "VITARE" : "VITARE [DEV]"}</title>
+    <title>
+      {prod ? "{{cookiecutter.app_name.upper()}}" : "{{cookiecutter.app_name.upper()}} [DEV]"}
+    </title>
     <Provider store={store}>
       <PersistGate
         loading={null}
