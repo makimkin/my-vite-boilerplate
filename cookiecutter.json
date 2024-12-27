@@ -1,3 +1,8 @@
 {
-  "app_name": "app"
+  "app_name": "app",
+  "_copy_without_render": [
+    ".github/workflows/labeler.yaml", 
+    ".github/workflows/checks.yaml", 
+    ".github/workflows/labeler.yml"
+  ]
 }
