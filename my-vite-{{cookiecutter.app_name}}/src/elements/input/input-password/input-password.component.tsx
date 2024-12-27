@@ -4,7 +4,6 @@ import { cn } from "📖/tailwind.utils";
 
 import { Button } from "🍄/button";
 import { Input } from "🍄/input";
-import { Label } from "🍄/label";
 import { Icon } from "🍄/icon";
 
 import { type TIcon } from "🔩/component.types";
@@ -40,7 +39,7 @@ const InputPassword: React.FC<TInputPasswordProps> = ({ value, onChange }) => {
   // #region RENDER
   // ---------------------------------------------------------------------------------------------*/
   return (
-    <Label className={cn("flex gap-xs")}>
+    <label className={cn("flex gap-xs")}>
       <Input
         onChange={handleChange}
         value={value}
@@ -56,7 +55,7 @@ const InputPassword: React.FC<TInputPasswordProps> = ({ value, onChange }) => {
           icon={icon}
         />
       </Button>
-    </Label>
+    </label>
   );
 };
 InputPassword.displayName = "InputPasswordComponent";

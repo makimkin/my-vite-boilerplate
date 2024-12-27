@@ -1,5 +1,4 @@
 import { Input } from "🍄/input";
-import { Label } from "🍄/label";
 
 import { cn } from "📖/tailwind.utils";
 // #endregion --------------------------------------------------------------------------------------
@@ -20,14 +19,14 @@ const InputEmail: React.FC<TInputEmailProps> = ({ value, onChange }) => {
   // #region RENDER
   // ---------------------------------------------------------------------------------------------*/
   return (
-    <Label>
+    <label>
       <Input
         value={value}
         onChange={handleChange}
         className={cn("")}
         type={"email"}
       />
-    </Label>
+    </label>
   );
 };
 InputEmail.displayName = "InputEmailComponent";

@@ -18,7 +18,7 @@ const LoginPage: React.FC = () => {
   // #endregion ------------------------------------------------------------------------------------
   // #region RENDER
   // ---------------------------------------------------------------------------------------------*/
-  if (auth) return <Navigate to={ROUTES.QUOTES} />;
+  if (auth) return <Navigate to={ROUTES.BASE} />;
 
   return <LoginLayout />;
 };
