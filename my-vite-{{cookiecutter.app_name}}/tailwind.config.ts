@@ -31,17 +31,13 @@ const config: Config = {
         200: "hsl(var(--color-background-200) / <alpha-value>)",
         300: "hsl(var(--color-background-300) / <alpha-value>)",
       },
+      gray: colors.gray,
       black: colors.black,
       white: colors.white,
-      gray: colors.gray,
-      transparent: colors.transparent,
       current: colors.current,
+      transparent: colors.transparent,
     }),
-    extend: {
-      height: () => ({
-        "header-row": "calc(var(--layout-header-row-height))",
-      }),
-    },
+    extend: {},
     data: {
       hidden: "is-hidden='true'",
     },

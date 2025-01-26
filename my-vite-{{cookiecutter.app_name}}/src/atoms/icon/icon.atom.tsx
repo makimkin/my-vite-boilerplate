@@ -1,8 +1,6 @@
 import { cn } from "📖/tailwind.utils";
 
-import sprite from "@/assets/sprite.svg";
-
-import { type TIcon } from "🔩/component.types";
+import type { TIcon } from "🔩/component.types";
 // #endregion --------------------------------------------------------------------------------------
 // #region ICON ATOM
 // -----------------------------------------------------------------------------------------------*/
@@ -15,7 +13,7 @@ const IconAtom: React.FC<TIconProps> = ({ icon, className, ...otherProps }) => (
     className={cn("aspect-square size-icon stroke-[1.5]", className)}
     {...otherProps}
   >
-    <use xlinkHref={`${sprite}#${icon}`} />
+    <use xlinkHref={`/src/assets/sprite.svg##${icon}`} />
   </svg>
 );
 
